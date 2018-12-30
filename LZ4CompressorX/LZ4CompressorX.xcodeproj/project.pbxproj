@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		EE17A6011D33D5A50066C4EE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = EE17A5FD1D33D5A50066C4EE /* Credits.rtf */; };
+		EE288B011D3498000086E37E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE288AFA1D3498000086E37E /* AppDelegate.m */; };
+		EE288B021D3498000086E37E /* DropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE288AFC1D3498000086E37E /* DropViewController.m */; };
+		EE288B031D3498000086E37E /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE288AFE1D3498000086E37E /* MainWindowController.m */; };
+		EE2A7A081D33CAA10015C995 /* DropView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2A7A041D33CAA10015C995 /* DropView.xib */; };
+		EE2A7A091D33CAA10015C995 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2A7A061D33CAA10015C995 /* MainWindow.xib */; };
+		EE2A7A0C1D33CAB00015C995 /* DropView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2A7A0B1D33CAB00015C995 /* DropView.m */; };
+		EE2A7A2C1D33CC5B0015C995 /* CompressOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2A7A291D33CC5B0015C995 /* CompressOperation.m */; };
+		EE2A7A2D1D33CC5B0015C995 /* DecompressOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2A7A2B1D33CC5B0015C995 /* DecompressOperation.m */; };
+		EE2A7A331D33CC660015C995 /* lz4.c in Sources */ = {isa = PBXBuildFile; fileRef = EE2A7A2F1D33CC660015C995 /* lz4.c */; };
+		EE2A7A341D33CC660015C995 /* lz4hc.c in Sources */ = {isa = PBXBuildFile; fileRef = EE2A7A311D33CC660015C995 /* lz4hc.c */; };
+		EE3D068D209AC37F00586986 /* xxhash.c in Sources */ = {isa = PBXBuildFile; fileRef = EE3D068A209AC37F00586986 /* xxhash.c */; };
+		EE3D068E209AC37F00586986 /* lz4frame.c in Sources */ = {isa = PBXBuildFile; fileRef = EE3D068C209AC37F00586986 /* lz4frame.c */; };
+		EE3F0CD5209A644A0043D2C3 /* WaitWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE3F0CD3209A644A0043D2C3 /* WaitWindow.xib */; };
+		EE3F0D06209A67030043D2C3 /* WaitWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3F0D05209A67030043D2C3 /* WaitWindowController.m */; };
+		EEAB7E92209A7095004BC537 /* LZ4CompressorX.icns in Resources */ = {isa = PBXBuildFile; fileRef = EEAB7E90209A7095004BC537 /* LZ4CompressorX.icns */; };
+		EEAB7E9A209A70FF004BC537 /* Documentation.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = EEAB7E98209A70FF004BC537 /* Documentation.rtfd */; };
+		EED7810320A7FDF90076290A /* QuickLookLZ4.qlgenerator in Copy QuickLookLZ4  plugin */ = {isa = PBXBuildFile; fileRef = EED780F920A7FDE90076290A /* QuickLookLZ4.qlgenerator */; };
+		EEE2E4062099A34B000C9063 /* StatisticsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE2E4052099A34B000C9063 /* StatisticsWindowController.m */; };
+		EEE2E4102099A427000C9063 /* StatisticsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEE2E40E2099A427000C9063 /* StatisticsWindow.xib */; };
+		EEED88DF2098584A00B96B42 /* WorstCaseWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEED88DD2098584A00B96B42 /* WorstCaseWindow.xib */; };
+		EEED88E8209858DF00B96B42 /* WorstCaseWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEED88E7209858DF00B96B42 /* WorstCaseWindowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EED780F820A7FDE90076290A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED780F120A7FDE80076290A /* QuickLookLZ4.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D576316048677EA00EA77CD;
+			remoteInfo = QuickLookLZ4;
+		};
+		EEFA7BA321D587490021E3C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EED780F120A7FDE80076290A /* QuickLookLZ4.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57630D048677EA00EA77CD;
+			remoteInfo = QuickLookLZ4;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EEE99B2E20A6CEDE0042895D /* Copy QuickLookLZ4  plugin */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/QuickLook;
+			dstSubfolderSpec = 1;
+			files = (
+				EED7810320A7FDF90076290A /* QuickLookLZ4.qlgenerator in Copy QuickLookLZ4  plugin */,
+			);
+			name = "Copy QuickLookLZ4  plugin";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* LZ4CompressorX_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ4CompressorX_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* LZ4CompressorX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LZ4CompressorX-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* LZ4CompressorX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZ4CompressorX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE17A5FE1D33D5A50066C4EE /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		EE288AF91D3498000086E37E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE288AFA1D3498000086E37E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE288AFB1D3498000086E37E /* DropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropViewController.h; sourceTree = "<group>"; };
+		EE288AFC1D3498000086E37E /* DropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropViewController.m; sourceTree = "<group>"; };
+		EE288AFD1D3498000086E37E /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		EE288AFE1D3498000086E37E /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		EE2A7A051D33CAA10015C995 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/DropView.xib; sourceTree = "<group>"; };
+		EE2A7A071D33CAA10015C995 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		EE2A7A0A1D33CAB00015C995 /* DropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DropView.h; path = Views/DropView.h; sourceTree = "<group>"; };
+		EE2A7A0B1D33CAB00015C995 /* DropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DropView.m; path = Views/DropView.m; sourceTree = "<group>"; };
+		EE2A7A281D33CC5B0015C995 /* CompressOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompressOperation.h; sourceTree = "<group>"; };
+		EE2A7A291D33CC5B0015C995 /* CompressOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompressOperation.m; sourceTree = "<group>"; };
+		EE2A7A2A1D33CC5B0015C995 /* DecompressOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecompressOperation.h; sourceTree = "<group>"; };
+		EE2A7A2B1D33CC5B0015C995 /* DecompressOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecompressOperation.m; sourceTree = "<group>"; };
+		EE2A7A2F1D33CC660015C995 /* lz4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lz4.c; sourceTree = "<group>"; };
+		EE2A7A301D33CC660015C995 /* lz4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lz4.h; sourceTree = "<group>"; };
+		EE2A7A311D33CC660015C995 /* lz4hc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lz4hc.c; sourceTree = "<group>"; };
+		EE2A7A321D33CC660015C995 /* lz4hc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lz4hc.h; sourceTree = "<group>"; };
+		EE3D0689209AC37F00586986 /* xxhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xxhash.h; sourceTree = "<group>"; };
+		EE3D068A209AC37F00586986 /* xxhash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xxhash.c; sourceTree = "<group>"; };
+		EE3D068B209AC37F00586986 /* lz4frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lz4frame.h; sourceTree = "<group>"; };
+		EE3D068C209AC37F00586986 /* lz4frame.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lz4frame.c; sourceTree = "<group>"; };
+		EE3D0697209AC3BD00586986 /* lz4frame_static.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lz4frame_static.h; sourceTree = "<group>"; };
+		EE3F0CD4209A644A0043D2C3 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/WaitWindow.xib; sourceTree = "<group>"; };
+		EE3F0D04209A67030043D2C3 /* WaitWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitWindowController.h; sourceTree = "<group>"; };
+		EE3F0D05209A67030043D2C3 /* WaitWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitWindowController.m; sourceTree = "<group>"; };
+		EE4F1B6A20A68BC200389279 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		EE4F1B6C20A68BC200389279 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		EE4F1B6E20A68BC200389279 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		EE4F1B7020A68BC200389279 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EE4F1B8B20A68BDC00389279 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EEAB7E91209A7095004BC537 /* English */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = English; path = English.lproj/LZ4CompressorX.icns; sourceTree = "<group>"; };
+		EEAB7E99209A70FF004BC537 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; name = English; path = English.lproj/Documentation.rtfd; sourceTree = "<group>"; };
+		EED780F120A7FDE80076290A /* QuickLookLZ4.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuickLookLZ4.xcodeproj; path = QuickLookLZ4/QuickLookLZ4.xcodeproj; sourceTree = "<group>"; };
+		EEE2E4042099A34B000C9063 /* StatisticsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsWindowController.h; sourceTree = "<group>"; };
+		EEE2E4052099A34B000C9063 /* StatisticsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsWindowController.m; sourceTree = "<group>"; };
+		EEE2E40F2099A427000C9063 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/StatisticsWindow.xib; sourceTree = "<group>"; };
+		EEED88DE2098584A00B96B42 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/WorstCaseWindow.xib; sourceTree = "<group>"; };
+		EEED88E6209858DF00B96B42 /* WorstCaseWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorstCaseWindowController.h; sourceTree = "<group>"; };
+		EEED88E7209858DF00B96B42 /* WorstCaseWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorstCaseWindowController.m; sourceTree = "<group>"; };
+		EEFD83432033F78D004E4B09 /* UserDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefines.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* LZ4CompressorX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* XBSQ */ = {
+			isa = PBXGroup;
+			children = (
+				EED780F120A7FDE80076290A /* QuickLookLZ4.xcodeproj */,
+				EE2A7A2E1D33CC660015C995 /* LZ4Source */,
+				EE288AF81D3498000086E37E /* Coordinators */,
+				EE2A7A271D33CC5B0015C995 /* Model */,
+				EE96EF6D1D3397D5008E2CDC /* Views */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = XBSQ;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EEFD83432033F78D004E4B09 /* UserDefines.h */,
+				256AC3F00F4B6AF500CF3369 /* LZ4CompressorX_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEAB7E98209A70FF004BC537 /* Documentation.rtfd */,
+				EEAB7E90209A7095004BC537 /* LZ4CompressorX.icns */,
+				EE17A5FD1D33D5A50066C4EE /* Credits.rtf */,
+				8D1107310486CEB800E47090 /* LZ4CompressorX-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				EE4F1B6A20A68BC200389279 /* QuickLook.framework */,
+				EE4F1B6C20A68BC200389279 /* ApplicationServices.framework */,
+				EE4F1B6E20A68BC200389279 /* CoreServices.framework */,
+				EE4F1B7020A68BC200389279 /* CoreFoundation.framework */,
+				EE4F1B8B20A68BDC00389279 /* Foundation.framework */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE288AF81D3498000086E37E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				EE288AF91D3498000086E37E /* AppDelegate.h */,
+				EE288AFA1D3498000086E37E /* AppDelegate.m */,
+				EE288AFB1D3498000086E37E /* DropViewController.h */,
+				EE288AFC1D3498000086E37E /* DropViewController.m */,
+				EE288AFD1D3498000086E37E /* MainWindowController.h */,
+				EE288AFE1D3498000086E37E /* MainWindowController.m */,
+				EEE2E4042099A34B000C9063 /* StatisticsWindowController.h */,
+				EEE2E4052099A34B000C9063 /* StatisticsWindowController.m */,
+				EE3F0D04209A67030043D2C3 /* WaitWindowController.h */,
+				EE3F0D05209A67030043D2C3 /* WaitWindowController.m */,
+				EEED88E6209858DF00B96B42 /* WorstCaseWindowController.h */,
+				EEED88E7209858DF00B96B42 /* WorstCaseWindowController.m */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		EE2A7A271D33CC5B0015C995 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A7A281D33CC5B0015C995 /* CompressOperation.h */,
+				EE2A7A291D33CC5B0015C995 /* CompressOperation.m */,
+				EE2A7A2A1D33CC5B0015C995 /* DecompressOperation.h */,
+				EE2A7A2B1D33CC5B0015C995 /* DecompressOperation.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE2A7A2E1D33CC660015C995 /* LZ4Source */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A7A2F1D33CC660015C995 /* lz4.c */,
+				EE2A7A301D33CC660015C995 /* lz4.h */,
+				EE3D068B209AC37F00586986 /* lz4frame.h */,
+				EE3D068C209AC37F00586986 /* lz4frame.c */,
+				EE3D0697209AC3BD00586986 /* lz4frame_static.h */,
+				EE2A7A311D33CC660015C995 /* lz4hc.c */,
+				EE2A7A321D33CC660015C995 /* lz4hc.h */,
+				EE3D0689209AC37F00586986 /* xxhash.h */,
+				EE3D068A209AC37F00586986 /* xxhash.c */,
+			);
+			name = LZ4Source;
+			path = LZ4Lib;
+			sourceTree = "<group>";
+		};
+		EE96EF6D1D3397D5008E2CDC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE2A7A0A1D33CAB00015C995 /* DropView.h */,
+				EE2A7A0B1D33CAB00015C995 /* DropView.m */,
+				EE2A7A041D33CAA10015C995 /* DropView.xib */,
+				EE2A7A061D33CAA10015C995 /* MainWindow.xib */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				EEE2E40E2099A427000C9063 /* StatisticsWindow.xib */,
+				EE3F0CD3209A644A0043D2C3 /* WaitWindow.xib */,
+				EEED88DD2098584A00B96B42 /* WorstCaseWindow.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EED780F220A7FDE80076290A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EED780F920A7FDE90076290A /* QuickLookLZ4.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* LZ4CompressorX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "LZ4CompressorX" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				EEE99B2E20A6CEDE0042895D /* Copy QuickLookLZ4  plugin */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEFA7BA421D587490021E3C8 /* PBXTargetDependency */,
+			);
+			name = LZ4CompressorX;
+			productInstallPath = "$(HOME)/Applications";
+			productName = XBSQ;
+			productReference = 8D1107320486CEB800E47090 /* LZ4CompressorX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LZ4CompressorX" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* XBSQ */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EED780F220A7FDE80076290A /* Products */;
+					ProjectRef = EED780F120A7FDE80076290A /* QuickLookLZ4.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* LZ4CompressorX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EED780F920A7FDE90076290A /* QuickLookLZ4.qlgenerator */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QuickLookLZ4.qlgenerator;
+			remoteRef = EED780F820A7FDE90076290A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				EE2A7A081D33CAA10015C995 /* DropView.xib in Resources */,
+				EE2A7A091D33CAA10015C995 /* MainWindow.xib in Resources */,
+				EE17A6011D33D5A50066C4EE /* Credits.rtf in Resources */,
+				EEED88DF2098584A00B96B42 /* WorstCaseWindow.xib in Resources */,
+				EEE2E4102099A427000C9063 /* StatisticsWindow.xib in Resources */,
+				EE3F0CD5209A644A0043D2C3 /* WaitWindow.xib in Resources */,
+				EEAB7E92209A7095004BC537 /* LZ4CompressorX.icns in Resources */,
+				EEAB7E9A209A70FF004BC537 /* Documentation.rtfd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				EE2A7A0C1D33CAB00015C995 /* DropView.m in Sources */,
+				EE2A7A2C1D33CC5B0015C995 /* CompressOperation.m in Sources */,
+				EE2A7A2D1D33CC5B0015C995 /* DecompressOperation.m in Sources */,
+				EE2A7A331D33CC660015C995 /* lz4.c in Sources */,
+				EE2A7A341D33CC660015C995 /* lz4hc.c in Sources */,
+				EE288B011D3498000086E37E /* AppDelegate.m in Sources */,
+				EE288B021D3498000086E37E /* DropViewController.m in Sources */,
+				EE288B031D3498000086E37E /* MainWindowController.m in Sources */,
+				EEED88E8209858DF00B96B42 /* WorstCaseWindowController.m in Sources */,
+				EEE2E4062099A34B000C9063 /* StatisticsWindowController.m in Sources */,
+				EE3F0D06209A67030043D2C3 /* WaitWindowController.m in Sources */,
+				EE3D068D209AC37F00586986 /* xxhash.c in Sources */,
+				EE3D068E209AC37F00586986 /* lz4frame.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEFA7BA421D587490021E3C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuickLookLZ4;
+			targetProxy = EEFA7BA321D587490021E3C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		EE17A5FD1D33D5A50066C4EE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE17A5FE1D33D5A50066C4EE /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		EE2A7A041D33CAA10015C995 /* DropView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2A7A051D33CAA10015C995 /* English */,
+			);
+			name = DropView.xib;
+			sourceTree = "<group>";
+		};
+		EE2A7A061D33CAA10015C995 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2A7A071D33CAA10015C995 /* English */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		EE3F0CD3209A644A0043D2C3 /* WaitWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE3F0CD4209A644A0043D2C3 /* English */,
+			);
+			name = WaitWindow.xib;
+			sourceTree = "<group>";
+		};
+		EEAB7E90209A7095004BC537 /* LZ4CompressorX.icns */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEAB7E91209A7095004BC537 /* English */,
+			);
+			name = LZ4CompressorX.icns;
+			sourceTree = "<group>";
+		};
+		EEAB7E98209A70FF004BC537 /* Documentation.rtfd */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEAB7E99209A70FF004BC537 /* English */,
+			);
+			name = Documentation.rtfd;
+			sourceTree = "<group>";
+		};
+		EEE2E40E2099A427000C9063 /* StatisticsWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEE2E40F2099A427000C9063 /* English */,
+			);
+			name = StatisticsWindow.xib;
+			sourceTree = "<group>";
+		};
+		EEED88DD2098584A00B96B42 /* WorstCaseWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEED88DE2098584A00B96B42 /* English */,
+			);
+			name = WorstCaseWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LZ4CompressorX_Prefix.pch;
+				INFOPLIST_FILE = "LZ4CompressorX-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = LZ4CompressorX;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = LZ4CompressorX_Prefix.pch;
+				INFOPLIST_FILE = "LZ4CompressorX-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = LZ4CompressorX;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					x86_64,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+					x86_64,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+				VALID_ARCHS = "i386 ppc x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "LZ4CompressorX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "LZ4CompressorX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
